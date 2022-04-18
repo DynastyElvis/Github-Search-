@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
+import { Repos } from '../class/repos'
 
 @Component({
   selector: 'app-repos',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReposComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  repos:Repos;
+  reponame:string;
+  show:number;
+
+
+  constructor(private dataService: DataService) { 
+    this.repos = new Repos ("","","",new Date());
+    this.dataService.getRepoInfo().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    });
+
+     
   }
-
-}
