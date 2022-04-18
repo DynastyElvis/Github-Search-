@@ -25,6 +25,7 @@ export class ReposComponent implements OnInit {
      
   }
 
+
   searchRepo(){
     this.dataService.updateRepos(this.reponame);
     this.dataService.getRepoInfo().subscribe(repos => {
