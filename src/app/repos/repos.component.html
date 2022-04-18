@@ -1,1 +1,29 @@
-<p>repos works!</p>
+<!-- Begin of wrapper -->
+<div class="wrapper">
+
+    <div class="container-fluid">
+        <h4 class="style2">Repositories</h4>
+        <hr class="style2">
+        
+        <div class="row">
+  
+          <!-- Search input section -->
+          <div class="container-fluid search">
+            
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Repository" aria-label="Search" [(ngModel)]="reponame" name = "reponame" (keyup)= "searchRepo()">
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit"> <i class="fas fa-search"></i>Search</button>
+            </form>
+            <p class="searchtext">Enter Repository name to search for github profile</p>
+          </div>
+  
+        <!-- Load More -->
+        <div class="loadMore">
+          <button class="btn btn-outline-info my-2 my-sm-0 loadMore" (click)=loadMore()>Load More</button>
+        </div>
+        <!-- End of Load More -->
+    </div>
+  </div>
+  <!-- End of wrapper -->
+  
+  
