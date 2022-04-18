@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClassComponent } from './class/class.component';
 import { FontDirective } from './font.directive';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { LastPipe } from './last.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClassComponent,
-    FontDirective
+    FontDirective,
+    NotFoundComponent,
+    LastPipe
   ],
   imports: [
     BrowserModule,
