@@ -4,8 +4,13 @@ import { Directive,ElementRef,Input,HostListener } from '@angular/core';
   selector: '[appFont]'
 
 })
-export class FontDirective {
+eexport class FontDirective {
 
-  constructor() { }
 
-}
+  constructor(private elem:ElementRef) { }
+
+  
+
+  @HostListener("mouseenter") onmouseenter(){
+    this.fontChange('Caveat')
+  }
