@@ -19,11 +19,24 @@ import { DataService } from './services/data.service';
 import { HttpModule } from '@angular/http';
 import { FontDirective } from './font-directive/font.directive';
 import { LastPipe } from './pipe/last.pipe';
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    UsersComponent,
+    ReposComponent,
+    NotFoundComponent,
+    FontDirective,
+    LastPipe
+  ],
+  imports: [
+    BrowserModule,
+    RoutingModule,
+    HttpModule,
+    FormsModule
+
+  ],
+  providers: [DataService],
+  bootstrap: [AppComponent]
 })
-export class AppComponent {
-  title = 'git-search';
-}
+export class AppModule { }
