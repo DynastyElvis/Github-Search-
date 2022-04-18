@@ -7,6 +7,7 @@ import { ClassComponent } from './class/class.component';
 import { FontDirective } from './font.directive';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LastPipe } from './last.pipe';
+import { ReposComponent } from './repos/repos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LastPipe } from './last.pipe';
     ClassComponent,
     FontDirective,
     NotFoundComponent,
-    LastPipe
+    LastPipe,
+    ReposComponent
   ],
   imports: [
     BrowserModule,
