@@ -8,6 +8,7 @@ import { FontDirective } from './font.directive';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LastPipe } from './last.pipe';
 import { ReposComponent } from './repos/repos.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReposComponent } from './repos/repos.component';
     FontDirective,
     NotFoundComponent,
     LastPipe,
-    ReposComponent
+    ReposComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
