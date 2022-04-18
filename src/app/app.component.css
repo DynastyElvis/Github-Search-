@@ -1,0 +1,15 @@
+/*styling*/
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+  	background: rgb(206, 130, 130);
+  	margin: 0;
+  	padding: 0;
+}
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
