@@ -1,30 +1,41 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { RoutingModule } from './routing/routing.module'
+import { FormsModule } from '@angular/forms'
+// Defining routes
+// const routes:Routes=[
+//   {path:"users",component:UsersComponent},
+//   {path:"repos",component:ReposComponent},
+//   {path:"",redirectTo:"/users",pathMatch:"full"},
+//   {path:'**',component:NotFoundComponent}
+// ]
 import { AppComponent } from './app.component';
-import { ClassComponent } from './class/class.component';
-import { FontDirective } from './font.directive';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { LastPipe } from './last.pipe';
-import { ReposComponent } from './repos/repos.component';
 import { UsersComponent } from './users/users.component';
+import { ReposComponent } from './repos/repos.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { DataService } from './services/data.service';
+import { HttpModule } from '@angular/http';
+import { FontDirective } from './font-directive/font.directive';
+import { LastPipe } from './pipe/last.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClassComponent,
-    FontDirective,
-    NotFoundComponent,
-    LastPipe,
+    UsersComponent,
     ReposComponent,
-    UsersComponent
+    NotFoundComponent,
+    FontDirective,
+    LastPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RoutingModule,
+    HttpModule,
+    FormsModule
+
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
