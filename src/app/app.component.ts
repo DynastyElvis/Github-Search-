@@ -11,7 +11,14 @@ import { FormsModule } from '@angular/forms'
 //   {path:"",redirectTo:"/users",pathMatch:"full"},
 //   {path:'**',component:NotFoundComponent}
 // ]
-
+import { AppComponent } from './app.component';
+import { UsersComponent } from './users/users.component';
+import { ReposComponent } from './repos/repos.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { DataService } from './services/data.service';
+import { HttpModule } from '@angular/http';
+import { FontDirective } from './font-directive/font.directive';
+import { LastPipe } from './pipe/last.pipe';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
