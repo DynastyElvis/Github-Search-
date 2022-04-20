@@ -1,0 +1,111 @@
+/* Body Styling */
+
+div.wrapper{
+margin-top: 80px;
+}
+.inline{
+    display: inline;
+}
+
+
+/* User Profile Styling */
+.profile{
+    margin: 20px;
+}
+img{
+    width:inherit;
+    text-align: centre;
+    margin-top: 50px;
+}
+
+h4.style2{
+    margin-top: 50px;
+    font-family: 'Great Vibes', ; 
+    text-align: center;
+    font-size: 36px;
+    color:#a66f27;
+}
+h4{
+    font-family: 'Great Vibes', ; 
+    text-align: center;
+    font-size: 36px;
+    color:#2693ab;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+div.col-md-3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+span.profile_follows{
+    float: right;
+}
+span.badge{
+    margin:5px;
+}
+i{
+    padding: 5px;
+}
+
+.github_btn{
+    margin: 30px 0px 30px ;
+}
+.search{
+    padding: 30px;
+    margin: 0 30px 0 20px;
+}
+
+.searchtext{
+    padding-top:10px;
+    font-size: 35px;
+    color:#134984;
+}
+
+/* End of Users Styling */
+
+/* Repositories section styling */
+div.cards{
+    width: 100%;
+}
+
+div.cards.repocard{
+    border: 5px solid #2d53c5;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+
+}
+
+div.container-fluid.search{
+    padding-bottom: 0px;
+
+}
+/* End of Repositories Styling */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 348px) {
+    div.card-header{
+        height: 180px;
+    }
+
+} 
+
+@media only screen and (max-width: 610px)and (min-width:348px) {
+    div.card-header{
+        height: 110px;
+    }
+
+} 
+
+
